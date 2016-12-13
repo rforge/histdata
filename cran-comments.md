@@ -1,17 +1,20 @@
 ## Test environments
-* local Windows 7 install, R 3.1.2
-* win-builder (R-devel 3.3.0 beta (2016-04-10 r70462), 3.2.4 Revised (2016-03-16 r70336))
+* local Windows 7 install, 3.2.5 (2016-04-14)
+* win-builder (R Under development (unstable) (2016-12-12 r71777))
 
 ## R CMD check results
-There were no ERRORs or WARNINGs.  One spurious NOTE (since I mention the package) 
-Possibly mis-spelled words in DESCRIPTION:
-  HistData (14:18)
+There were no ERRORs, WARNINGs or NOTEs 
   
 ## Comments
-This is a minor release, adding one new vignette
+This is a major release, adding a few new data sets and revising documentation examples
 
-# HistData 0.7-7
+## Version 0.8-0 (2016-12-07)
 
-  Added vignettes/Snow_deaths and data/Snow.deaths2 [Thx: Peter Li]
-  Fixed web links to make curl happy
+*  Added HalleyLifeTable
+*  Added Cholera data from Farr 1852 [thx: Neville Verlander]
+*  Correction to ZeaMays.Rd [thx: Bryan Clair]
+*  Add Suggests: effects for effect plots for some examples.
+*  Added Snow.dates -- deaths by date from Aug 19 -- Sept 30, 1854
+*  Substantially revised examples in Snow.Rd to make plots more flexible. SnowMap()
+   should be a function in the package and made more general, but this is not yet done.
 
